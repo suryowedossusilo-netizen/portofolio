@@ -1,7 +1,7 @@
 // assets/js/github.js
 class GitHubPortfolio {
     constructor(username, options = {}) {
-        this.username = username;
+        this.username = suryowedossusilo-netizen;
         this.excludeRepos = options.excludeRepos || [];
         this.filterTopics = options.filterTopics || [];
         this.cacheKey = `github_projects_${username}`;
