@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | Suryo Wedo Susilo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">SW<span class="highlight">S</span></a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="projects.html">Portofolio</a></li>
+                <li><a href="contact.html" class="active">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Hubungi <span class="highlight">Saya</span></h1>
+            <p class="page-subtitle">Mari berkolaborasi dan diskusi bersama</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- KIRI: Info Kontak -->
+                <div class="contact-info">
+                    <h2>Mari Berbicara!</h2>
+                    <p>Tertarik untuk bekerja sama atau memiliki pertanyaan? Jangan ragu untuk menghubungi saya.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="detail">
+                                <h4>Email</h4>
+                                <p><a href="mailto:25053013@student.uwp.ac.id">25053013@student.uwp.ac.id</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="detail">
+                                <h4>Instagram</h4>
+                                <p><a href="https://www.instagram.com/vruimte_?igsh=cGJ2N3ZyM3BhdHd0" target="_blank" rel="noopener noreferrer">@Vruimte_</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="detail">
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://www.linkedin.com/in/suryo-wedo-susilo/" target="_blank" rel="noopener noreferrer">Suryo Wedo Susilo</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="detail">
+                                <h4>Lokasi</h4>
+                                <p><a href="https://maps.google.com/?q=Surabaya,Jawa+Timur" target="_blank" rel="noopener noreferrer">Surabaya, Jawa Timur</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-connect">
+                        <h4>Ikuti Saya</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/suryowedossusilo-netizen" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/suryo-wedo-susilo" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/Vruimte_" target="_blank" rel="noopener noreferrer" class="social-icon" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://x.com/VRuimte" target="_blank" rel="noopener noreferrer" class="social-icon" title="x">
+                                <i class="fab fa-x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- TUTUP contact-info -->
+                
+                <!-- KANAN: Form Kontak -->
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="email@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Subjek pesan">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tulis pesan Anda..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+                <!-- TUTUP contact-form-wrapper -->
+                
+            </div>
+            <!-- TUTUP contact-grid -->
+        </div>
+        <!-- TUTUP container -->
+    </section>
+    <!-- TUTUP contact-section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">SW<span class="highlight">S</span></span>
+                    <p>Web Developer & Digital Enthusiast</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Tentang</a>
+                    <a href="projects.html">Portofolio</a>
+                    <a href="contact.html">Kontak</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/suryowedossusilo-netizen" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/suryo-wedo-susilo" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/Vruimte_" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- TUTUP footer-content -->
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Suryo Wedo Susilo. All rights reserved.</p>
+            </div>
+        </div>
+        <!-- TUTUP container -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/loadData.js"></script>
+    <script src="js/animation.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah terkirim. Saya akan menghubungi Anda segera.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>

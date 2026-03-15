@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "HTML & CSS",
+        "level": 90,
+        "icon": "fab fa-html5",
+        "color": "#e34c26",
+        "category": "frontend"
+    },
+    {
+        "id": 2,
+        "name": "JavaScript",
+        "level": 85,
+        "icon": "fab fa-js",
+        "color": "#f7df1e",
+        "category": "frontend"
+    },
+    {
+        "id": 3,
+        "name": "Python",
+        "level": 80,
+        "icon": "fab fa-python",
+        "color": "#3776ab",
+        "category": "backend"
+    },
+    {
+        "id": 4,
+        "name": "UI/UX Design",
+        "level": 75,
+        "icon": "fas fa-paint-brush",
+        "color": "#ff6b6b",
+        "category": "design"
+    },
+    {
+        "id": 5,
+        "name": "React",
+        "level": 70,
+        "icon": "fab fa-react",
+        "color": "#61dafb",
+        "category": "frontend"
+    },
+    {
+        "id": 6,
+        "name": "Node.js",
+        "level": 65,
+        "icon": "fab fa-node",
+        "color": "#339933",
+        "category": "backend"
+    }
+]

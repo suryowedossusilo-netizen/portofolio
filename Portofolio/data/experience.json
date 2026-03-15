@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Koordinator Lapangan",
+        "organization": "Event Fun Run Campus",
+        "period": "2023 - Sekarang",
+        "description": "Bertanggung jawab atas koordinasi seluruh kegiatan di lapangan selama event Fun Run berlangsung. Mengatur tim volunteers, memastikan keselamatan peserta, dan mengkoordinasikan logistik lapangan.",
+        "tags": ["Leadership", "Event Management", "Team Coordination"],
+        "type": "event"
+    },
+    {
+        "id": 2,
+        "title": "Anggota Aktif",
+        "organization": "Himpunan Mahasiswa Teknik Informatika",
+        "period": "2022 - 2023",
+        "description": "Berkontribusi dalam berbagai kegiatan organisasi kemahasiswaan, termasuk seminar teknologi, workshop programming, dan acara sosial kemahasiswaan.",
+        "tags": ["Organization", "Networking", "Community"],
+        "type": "organization"
+    },
+    {
+        "id": 3,
+        "title": "Staff Divisi IT",
+        "organization": "Festival Kampus",
+        "period": "2023",
+        "description": "Mengelola sistem informasi dan website event, serta membantu troubleshooting teknis selama festival berlangsung.",
+        "tags": ["Web Development", "IT Support", "Troubleshooting"],
+        "type": "event"
+    }
+]

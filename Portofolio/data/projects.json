@@ -1,0 +1,35 @@
+[
+  {
+      "id": 1,
+      "title": "TUGAS KULIAH",
+      "category": "web",
+      "description": "Kumpulan tugas kuliah (wijaya putra) berisi berbagai project akademik dan latihan pemrograman.",
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80",
+      "tech": ["Python", "Django", "3 Fitur"],
+      "stars": 0,
+      "forks": 0,
+      "link": "https://github.com/yowedossusilo-netizen/GAS-KULIAH"
+  },
+  {
+      "id": 2,
+      "title": "SuryoWedossusilo Netizen",
+      "category": "web",
+      "description": "Repository personal branding dan netizen profile dengan berbagai fitur interaktif.",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80",
+      "tech": ["JavaScript", "CSS", "3 Fitur"],
+      "stars": 0,
+      "forks": 0,
+      "link": "https://github.com/yowedossusilo-netizen/ryoWedossusilo-..."
+  },
+  {
+      "id": 3,
+      "title": "Uwp Funrun",
+      "category": "aplikasi",
+      "description": "Repository dengan fokus pada HTML dan teknologi frontend modern.",
+      "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80",
+      "tech": ["HTML", "CSS", "3 Fitur"],
+      "stars": 0,
+      "forks": 0,
+      "link": "https://github.com/yowedossusilo-netizen/uwp-funrun"
+  }
+]

@@ -1,0 +1,23 @@
+{
+    "name": "Suryo Wedo Susilo",
+    "role": "Mahasiswa Teknik Informatika / Web Developer",
+    "shortDesc": "Saya adalah mahasiswa yang tertarik pada pengembangan website, teknologi, dan pengembangan sistem digital.",
+    "fullDesc": "<p>Saya adalah mahasiswa Teknik Informatika yang memiliki passion dalam pengembangan web dan teknologi. Dengan kombinasi keterampilan teknis dan kreativitas, saya berfokus pada pembuatan solusi digital yang fungsional dan menarik.</p><p>Saya percaya bahwa teknologi harus accessible dan user-friendly. Setiap proyek yang saya kerjakan, saya usahakan untuk memberikan pengalaman terbaik bagi pengguna.</p>",
+    "education": "Teknik Informatika",
+    "location": "Indonesia",
+    "email": "suryo.wedo@email.com",
+    "phone": "+62 812-3456-7890",
+    "avatar": "assets/images/profile.jpg",
+    "social": {
+        "github": "https://github.com/suryowedo",
+        "linkedin": "https://linkedin.com/in/suryowedo",
+        "instagram": "https://instagram.com/suryo.wedo",
+        "twitter": "https://twitter.com/suryowedo"
+    },
+    "stats": {
+        "projects": 15,
+        "experience": 2,
+        "clients": 10,
+        "coffee": 999
+    }
+}

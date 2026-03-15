@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryo Wedo Susilo | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SW<span class="highlight">S</span></a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="projects.html">Portofolio</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting">Halo, saya</p>
+                    <h1 class="hero-title">Suryo Wedo <span class="highlight">Susilo</span></h1>
+                    <p class="hero-subtitle" id="typingText"></p>
+                    <p class="hero-description">
+                        Mahasiswa Teknik Informatika yang fokus pada 
+                        <strong>Full Stack Web Development</strong>. 
+                        Menggunakan <span class="highlight">React.js</span> dan 
+                        <span class="highlight">Node.js</span> untuk membangun 
+                        aplikasi web modern yang responsif dan performant.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">
+                            Lihat Portofolio <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="contact.html" class="btn btn-outline">
+                            Hubungi Saya <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="assets/images/profile .jpg" alt="Suryo Wedo Susilo" id="heroImage">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#featured"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Featured Projects Preview -->
+    <section id="featured" class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Project Unggulan</h2>
+                <a href="projects.html" class="view-all">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="projects-preview" id="featuredProjects">
+                <!-- Loaded from JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Project Selesai</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="8">0</span>
+                    <span class="stat-label">Tahun Pengalaman</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1">0</span>
+                    <span class="stat-label">Event Diikuti</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">SW<span class="highlight">S</span></span>
+                    <p>Web Developer & Digital Enthusiast</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Tentang</a>
+                    <a href="projects.html">Portofolio</a>
+                    <a href="contact.html">Kontak</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Suryo Wedo Susilo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/loadData.js"></script>
+    <script src="js/animation.js"></script>
+    <script>
+        // Load featured projects on homepage
+        document.addEventListener('DOMContentLoaded', () => {
+            loadFeaturedProjects();
+            initTypingEffect();
+        });
+    </script>
+</body>
+</html>
