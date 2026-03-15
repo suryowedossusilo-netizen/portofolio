@@ -279,6 +279,10 @@ a {
     position: relative;
     width: 320px;
     height: 400px;
+    border-radius: 30px;  
+    border: 3px solid var(--secondary); 
+    overflow: hidden; 
+    box-shadow: var(--shadow-hover);
 }
 
 .image-wrapper img {
@@ -286,12 +290,9 @@ a {
     height: 100%;
     object-fit: cover;
     object-position: center 15%;
-    border-radius: 30px;
-    position: relative;
-    z-index: 2;
-    box-shadow: var(--shadow-hover);
     display: block;
 }
+
 
 .image-border {
     position: absolute;
