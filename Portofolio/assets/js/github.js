@@ -1,7 +1,7 @@
 // assets/js/github.js
 class GitHubPortfolio {
     constructor(username, options = {}) {
-        this.username = suryowedossusilo-netizen;
+        this.username = username; // Perbaiki: jangan pakai string literal
         this.excludeRepos = options.excludeRepos || [];
         this.filterTopics = options.filterTopics || [];
         this.cacheKey = `github_projects_${username}`;
@@ -15,7 +15,7 @@ class GitHubPortfolio {
             const cached = this.getCache();
             if (cached) return cached;
 
-            const response = await fetch(`https://api.github.com/users/${this.github.com/suryowedossusilo-netizen}/repos?sort=updated&per_page=100`);
+            const response = await fetch(`https://api.github.com/users/${this.username}/repos?sort=updated&per_page=100`);
             
             if (!response.ok) throw new Error('Failed to fetch GitHub repos');
             
@@ -44,7 +44,7 @@ class GitHubPortfolio {
             // Filter berdasarkan topic (opsional)
             if (this.filterTopics.length > 0) {
                 const hasTopic = this.filterTopics.some(topic => 
-                    repo.topics.includes(topic)
+                    repo.topics && repo.topics.includes(topic)
                 );
                 if (!hasTopic) return false;
             }
@@ -58,7 +58,7 @@ class GitHubPortfolio {
         return {
             id: repo.id,
             title: this.formatTitle(repo.name),
-            category: this.detectCategory(repo.topics, repo.language),
+            category: this.detectCategory(repo.topics || [], repo.language),
             description: repo.description || 'Tidak ada deskripsi',
             image: this.getProjectImage(repo),
             tech: this.getTechStack(repo),
@@ -101,7 +101,7 @@ class GitHubPortfolio {
 
     // Ambil tech stack dari topics + language
     getTechStack(repo) {
-        const tech = [...repo.topics];
+        const tech = [...(repo.topics || [])];
         if (repo.language && !tech.includes(repo.language)) {
             tech.unshift(repo.language);
         }
