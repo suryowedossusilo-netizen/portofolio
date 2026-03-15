@@ -2,10 +2,6 @@
 
 This is my personal portfolio website that showcases my projects, skills, and experience as a web developer.
 
-## 🚀 Live Demo
-You can view the live website here:  
-🔗 https://your-portfolio-link.vercel.app
-
 ## 📌 Features
 - Responsive portfolio design
 - Project showcase section
