@@ -128,15 +128,39 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
-    <script src="js/loadData.js"></script>
+<script src="js/main.js"></script>
     <script src="js/animation.js"></script>
+    
+    <!-- GitHub Integration -->
+    <script src="assets/js/github.js"></script>
+    <script src="assets/js/project-renderer.js"></script>
+    
     <script>
-        // Load featured projects on homepage
-        document.addEventListener('DOMContentLoaded', () => {
-            loadFeaturedProjects();
+        // Inisialisasi semua fitur setelah DOM loaded
+        document.addEventListener('DOMContentLoaded', async () => {
+            // 1. Inisialisasi typing effect
             initTypingEffect();
+            
+            // 2. Load featured projects dari GitHub
+            try {
+                const github = new GitHubPortfolio('suryowedossusilo-netizen', {
+                    excludeRepos: [], // Tambahkan nama repo yang ingin disembunyikan
+                    filterTopics: []  // Filter berdasarkan topics jika perlu
+                });
+                
+                const renderer = new ProjectRenderer(github);
+                await renderer.renderFeatured('#featuredProjects', 3);
+                
+                console.log('✅ Featured projects loaded from GitHub');
+            } catch (error) {
+                console.error('❌ Error loading featured projects:', error);
+                document.querySelector('#featuredProjects').innerHTML = `
+                    <div class="error-message">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>Gagal memuat proyek. Silakan refresh halaman.</p>
+                    </div>
+                `;
+            }
         });
     </script>
 </body>
