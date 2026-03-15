@@ -25,7 +25,3 @@
 - **HTML5** - Semantic structure and markup
 - **CSS3** - Styling, flexbox/grid layouts, and animations
 - **JavaScript** - Interactive elements and DOM manipulation
-
----
-
-## 📂 Project Structure
