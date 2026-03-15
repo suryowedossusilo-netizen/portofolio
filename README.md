@@ -15,3 +15,15 @@ This is my personal portfolio website that showcases my projects, skills, and ex
 - JavaScript
 
 ## 📂 Project Structure
+portofolio/
+├── index.html          # Halaman utama portfolio
+├── about.html          # Halaman tentang/tentang saya
+├── projects.html       # Halaman showcase proyek
+├── contact.html        # Halaman kontak
+├── css/
+│   └── style.css       # File stylesheet utama
+├── js/
+│   └── script.js       # File JavaScript untuk interaktivitas
+├── images/             # Folder untuk menyimpan gambar
+│   └── (berbagai gambar portfolio)
+└── README.md           # Dokumentasi proyek
